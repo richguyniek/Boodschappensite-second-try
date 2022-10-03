@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 
 body{
@@ -12,6 +13,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: rgb(36, 192, 184);
+
 }
 
 .topimage{
@@ -22,6 +24,7 @@ body{
     background-color: black;
     width: 100vw;
     height: 350px;
+
 }
 
 .buttonbox{
@@ -35,12 +38,14 @@ body{
     width: 500px;
     height: 70px;
     padding: 15px;
+
 }
 
 .button{
     background-color: orangered;
     width: 100px;
     height: 40px;
+
 }
 
 .middlebutton{
@@ -67,7 +72,6 @@ body{
 }
 
 h3{
-
     text-align: center;
     padding:2px;
     margin-bottom: 5px;
@@ -76,14 +80,49 @@ h3{
 
 .searchbar{
     width: 500px;
-    height: 50px;   
+    height: 50px;
+    padding-top: 15px;
     background-color: blueviolet;
+   
+}
+
+form{
+    height: 25px;
+    width: 400px;
+    margin-left: auto;
+     margin-right: auto;
+    background-color:rgba(248, 242, 242, 0.795);
+    display: flex;
+    flex: row;
+    align-items: center;
     
+}
+
+input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
 
 }
 
+::placeholder {
+    color: black;
+    opacity: 0.7; 
+
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+
 .grid{ /*height vervangen met fit-content*/
-   
     width:750px;
     height:500px; 
     display:grid;
@@ -100,25 +139,88 @@ h3{
     left: 325px;
     bottom:20px;
     background-color:orangered
+
 }
 
-@media screen and (max-width:793px) {
+@media screen and (max-width:766px){
+
+    .buttonbox{
+        max-width: 350px;
+
+    }
+    
+    .button{
+        max-width: 75px;
+
+    }
+
+    .middlebutton{
+        max-width: 125px;
+
+    }
+
+    .container{
+        max-width: 500px;
+        margin-right: 20px;
+
+    }
+
+    .searchbar{
+        height:35px;
+        max-width: 250px;
+
+    }
+
+    .grid{
+        max-width: 500px;
+
+    }
+
+    .order{
+        left:200px;
+
+    }
+
+}
+
+@media screen and (max-width:518px) {
     
     .buttonbox{
-        justify-content: space-evenly;
         flex-direction: column;
         height: 250px;
         width: 170px;
+
     }
     
     .button{
         margin:5px 0px 5px 0px;
+        max-width: 100px;
+    }
+   
+    .middlebutton{
+        max-width: 150px;
 
     }
 
-    .bodystyling{
-        justify-content:center ;
-        align-items: center;
+    .container{
+        max-width: 350px;
+        margin-right: 20px;
+
+    }
+
+    .searchbar{
+        height:35px;
+        max-width: 175px;
+
+    }
+
+    .grid{
+        max-width: 350px;
+
+    }
+
+    .order{
+        left:130px;
 
     }
 
