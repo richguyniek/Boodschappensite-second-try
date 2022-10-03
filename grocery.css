@@ -38,21 +38,23 @@ body{
     width: 500px;
     height: 70px;
     padding: 15px;
-
+    border-radius: 40px;
 }
 
 .button{
     background-color: orangered;
     width: 100px;
     height: 40px;
-
+    padding: 5px;
+    border-radius: 40px;
 }
 
 .middlebutton{
     background-color: orangered;
     width:150px;
     height:40px;
-
+    padding: 5px;
+    border-radius: 40px;
 }
 
 .bodystyling{
@@ -62,6 +64,7 @@ body{
 .container{
     width: 750px;
     margin-top: 20px;
+    padding: 6px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -78,19 +81,13 @@ h3{
    
 }
 
-.searchbar{
-    width: 500px;
-    height: 50px;
-    padding-top: 15px;
-    background-color: blueviolet;
-   
-}
 
 form{
     height: 25px;
     width: 400px;
+    border-radius: 20px;
     margin-left: auto;
-     margin-right: auto;
+    margin-right: auto;
     background-color:rgba(248, 242, 242, 0.795);
     display: flex;
     flex: row;
@@ -126,6 +123,7 @@ button {
     width:750px;
     height:500px; 
     display:grid;
+    grid: 400px;
     position: relative;
     background-color: yellow;
 
@@ -134,10 +132,14 @@ button {
 .order{
     height: 50px;
     width:100px;
+    padding-right: 9px;
+    padding-top: 5px;
     justify-content: flex-end;
+    text-align: center;
     position:absolute;
-    left: 325px;
+    left: 320px;
     bottom:20px;
+    border-radius: 40px;
     background-color:orangered
 
 }
@@ -165,11 +167,7 @@ button {
 
     }
 
-    .searchbar{
-        height:35px;
-        max-width: 250px;
-
-    }
+  
 
     .grid{
         max-width: 500px;
@@ -179,6 +177,17 @@ button {
     .order{
         left:200px;
 
+    }
+
+    input{
+        max-width:250px;
+        
+    }
+
+    form{
+       
+        max-width:250px;
+        
     }
 
 }
@@ -208,15 +217,11 @@ button {
 
     }
 
-    .searchbar{
-        height:35px;
-        max-width: 175px;
-
-    }
+    
 
     .grid{
         max-width: 350px;
-
+        
     }
 
     .order{
@@ -224,4 +229,13 @@ button {
 
     }
 
+    input{
+        max-width:175px
+
+    }
+
+    form{
+        max-width:175px;
+  
+    }
 }
