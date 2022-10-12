@@ -58,9 +58,22 @@ body{
 }
 
 .bodystyling{
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
     
 }
+
+.shoppinglist{ /*height vervangen met fit-content*/
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction:column;
+    width: 300px;
+    height: 560px;
+    background-color:magenta ;
+
+}
+
 .container{
     width: 750px;
     margin-top: 20px;
@@ -86,6 +99,7 @@ form{
     height: 25px;
     width: 400px;
     border-radius: 20px;
+    overflow:hidden;
     margin-left: auto;
     margin-right: auto;
     background-color:rgba(248, 242, 242, 0.795);
@@ -167,7 +181,10 @@ button {
 
     }
 
-  
+    .shoppinglist{
+        
+
+    }
 
     .grid{
         max-width: 500px;
@@ -193,6 +210,8 @@ button {
 }
 
 @media screen and (max-width:518px) {
+    
+  
     
     .buttonbox{
         flex-direction: column;
